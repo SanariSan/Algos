@@ -4,9 +4,12 @@
 // import { howTo } from './algs/binary-search-tree';
 // import { howTo } from './algs/palindrome';
 // import { howTo } from './algs/permutations';
+// import { howTo } from './algs/quick-sort';
+
+import { howTo } from './algs/graph-dijkstra';
 
 function init() {
-  //   howTo();
+  howTo();
 }
 
 init();
