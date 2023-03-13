@@ -50,14 +50,7 @@ function getQuickestPathDetails({
   return { quickestPath: path, quickestPathCost: costs[finishKey] };
 }
 
-export function dijkstra({
-  graph,
-  startKey = 's',
-}: {
-  graph: TGraph;
-  startKey?: string;
-  finishKey?: string;
-}) {
+export function dijkstra({ graph, startKey = 's' }: { graph: TGraph; startKey?: string }) {
   const costs: TCosts = {};
   const parents: TParents = {};
 
@@ -91,20 +84,28 @@ export function dijkstra({
     minCostNodeKey = getMinCostNodeKey({ costs, processed });
   }
 
-  return { graph, costs, parents };
+  return { costs, parents };
 }
 
 // E = edges, V = vertices
-// O(E * log(V))
+// djikstra O(E * log(V))
 export function howTo() {
   const graph = {
-    s: { a: 5, b: 2 },
-    a: { c: 4, d: 2 },
-    b: { a: 8, d: 7 },
-    c: { d: 6, f: 3 },
-    d: { f: 1 },
+    s: { a: 10 },
+    a: { b: 20 },
+    b: { c: 1, f: 30 },
+    c: { a: 1 },
     f: {},
   };
+
+  // const graph = {
+  //   s: { a: 5, b: 2 },
+  //   a: { c: 4, d: 2 },
+  //   b: { a: 8, d: 7 },
+  //   c: { d: 6, f: 3 },
+  //   d: { f: 1 },
+  //   f: {},
+  // };
 
   // const graph = {
   //   s: { a: 6, b: 2 },
