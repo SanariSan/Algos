@@ -16,6 +16,6 @@ export function binarySearch(arr: number[], target: number) {
   return false;
 }
 
-export function howTo() {
+export function useBinarySearch() {
   console.log(binarySearch([1, 2, 3, 4, 5, 6], 4));
 }

@@ -3,7 +3,6 @@
 type TGraph = Record<string, Record<string, number>>;
 type TCosts = Record<keyof TGraph, number>;
 type TParents = Record<keyof TGraph, string | undefined>;
-type TProcessed = Array<keyof TGraph>;
 
 function getQuickestPathDetails({
   costs,
@@ -113,7 +112,7 @@ export function bellmanFord({ graph, startKey = 's' }: { graph: TGraph; startKey
 
 // E = edges, V = vertices
 // bellman O(E * V) | *and with circular preventing probably O(E * E * V) ? | Should use SPFA for that
-export function howTo() {
+export function useBellman() {
   // const graph = {
   //   s: { a: 10, b: 20 },
   //   a: { c: 15 },

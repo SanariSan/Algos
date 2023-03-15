@@ -17,6 +17,6 @@ export function frequencyMap(arr: number[]) {
   //   }
 }
 
-export function howTo() {
+export function useFrequencyMap() {
   console.log(frequencyMap([1, 2, 1, 1, 3, 2, 4, 4, 5]));
 }
