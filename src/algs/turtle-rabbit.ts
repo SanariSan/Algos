@@ -1,4 +1,4 @@
-class ListNode {
+export class ListNode {
   val: unknown;
 
   next: ListNode | null;
@@ -37,7 +37,8 @@ export function linkedListCycled(head: ListNode) {
   return false;
 }
 
-export function howTo() {
+// O(n)
+export function useTurtleRabbit() {
   const head = new ListNode(1);
   head.next = new ListNode(2);
   head.next.next = new ListNode(3);

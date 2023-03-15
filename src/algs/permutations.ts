@@ -1,4 +1,4 @@
-function getPermutations<T>(inputArrayGlobal: readonly T[]) {
+export function getPermutations<T>(inputArrayGlobal: readonly T[]) {
   const out: Array<Readonly<T[]>> = [];
 
   function recursion(inputArrayLocal: readonly T[], accumulator: readonly T[] = []) {
@@ -20,8 +20,6 @@ function getPermutations<T>(inputArrayGlobal: readonly T[]) {
   return out;
 }
 
-export { getPermutations };
-
-export function howTo() {
+export function usePermutations() {
   console.log(getPermutations([1, 2, 3, 4]));
 }

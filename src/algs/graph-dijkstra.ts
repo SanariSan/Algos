@@ -89,7 +89,7 @@ export function dijkstra({ graph, startKey = 's' }: { graph: TGraph; startKey?: 
 
 // E = edges, V = vertices
 // djikstra O(E * log(V))
-export function howTo() {
+export function useDijkstra() {
   const graph = {
     s: { a: 10 },
     a: { b: 20 },

@@ -1,4 +1,4 @@
-class BSTNode {
+export class BSTNode {
   public data: number;
 
   public left: BSTNode | null;
@@ -12,7 +12,7 @@ class BSTNode {
   }
 }
 
-class BST {
+export class BST {
   private root: BSTNode | null;
 
   constructor() {
@@ -161,9 +161,7 @@ class BST {
   }
 }
 
-export { BSTNode, BST };
-
-export function howTo() {
+export function useBST() {
   const bst = new BST();
   bst.insert(100);
   bst.insert(50);

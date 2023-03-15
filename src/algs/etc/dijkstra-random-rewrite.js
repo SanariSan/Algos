@@ -66,7 +66,7 @@ export function dj({ graph, start = 's', finish = 'f' }) {
 }
 
 // next day rewrite from scratch to check if I understood everything right
-export function howTo() {
+export function useDijkstraRewrite() {
   const graph = {
     s: { a: 1, b: 5 },
     a: { c: 7 },

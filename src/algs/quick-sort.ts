@@ -42,7 +42,7 @@ export function qsHeap(arr: number[]): number[] {
 }
 
 // O(3n * log(n)) = O(n * log(n))
-export function howTo() {
+export function useQS() {
   console.dir(qsRecursive([17, 3, 2, 6, 12, 2, 5, 10, 1, 2, 7, 10, 7, 4, 9, 8]));
   console.dir(qsHeap([17, 3, 2, 6, 12, 2, 5, 10, 1, 2, 7, 10, 7, 4, 9, 8]));
 }

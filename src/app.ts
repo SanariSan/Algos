@@ -1,16 +1,29 @@
-// import { howTo } from './algs/frequency-map';
-// import { howTo } from './algs/turtle-rabbit';
-// import { howTo } from './algs/binary-search';
-// import { howTo } from './algs/binary-search-tree';
-// import { howTo } from './algs/palindrome';
-// import { howTo } from './algs/permutations';
-// import { howTo } from './algs/quick-sort';
-// import { howTo } from './algs/graph-bellman';
-// import { howTo } from './algs/graph-dijkstra';
-// import { howTo } from './algs/etc/dijkstra-random-rewrite';
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
+import { useFrequencyMap } from './algs/frequency-map';
+import { useTurtleRabbit } from './algs/turtle-rabbit';
+import { useBinarySearch } from './algs/binary-search';
+import { useBST } from './algs/binary-search-tree';
+import { useIsPalindrome } from './algs/palindrome';
+import { usePermutations } from './algs/permutations';
+import { useQS } from './algs/quick-sort';
+import { useBellman } from './algs/graph-bellman';
+import { useDijkstra } from './algs/graph-dijkstra';
+import { useDijkstraRewrite } from './algs/etc/dijkstra-random-rewrite';
+import { useDynamic } from './algs/dynamic';
 
 function init() {
-  // howTo();
+  // useFrequencyMap();
+  // useTurtleRabbit();
+  // useBinarySearch();
+  // useBST();
+  // useIsPalindrome();
+  // usePermutations();
+  // useQS();
+  // useBellman();
+  // useDijkstra();
+  // useDijkstraRewrite();
+  useDynamic();
 }
 
 init();
