@@ -3,9 +3,12 @@ export class ListNode {
 
   next: ListNode | null;
 
+  prev: ListNode | null;
+
   constructor(val: unknown) {
     this.val = val;
     this.next = null;
+    this.prev = null;
   }
 }
 
@@ -37,8 +40,36 @@ export function linkedListCycled(head: ListNode) {
   return false;
 }
 
+export function linkedListReverse(head: ListNode) {
+  let slow: ListNode | null = head;
+  let prev: ListNode | null = null;
+
+  while (slow !== null) {
+    slow.prev = prev;
+    prev = slow;
+    slow = slow.next;
+  }
+
+  // now slow is in the end and if we go .prev.prev... we traverse back
+
+  const end = prev;
+  slow = end;
+
+  while (slow !== null) {
+    console.log(slow.val);
+    prev = slow;
+    slow = slow.prev;
+  }
+
+  // back to start
+
+  slow = prev;
+
+  return slow;
+}
+
 // O(n)
-export function useTurtleRabbit() {
+export function useLinkedList() {
   const head = new ListNode(1);
   head.next = new ListNode(2);
   head.next.next = new ListNode(3);
@@ -49,4 +80,5 @@ export function useTurtleRabbit() {
 
   console.log(linkedListCycled(head));
   console.log(linkedListMiddle(head));
+  linkedListReverse(head);
 }
