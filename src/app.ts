@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
 import { useFrequencyMap } from './algs/frequency-map';
-import { useTurtleRabbit } from './algs/turtle-rabbit';
+import { useLinkedList } from './algs/linked-list';
 import { useBinarySearch } from './algs/binary-search';
 import { useBST } from './algs/binary-search-tree';
 import { useIsPalindrome } from './algs/palindrome';
@@ -14,7 +14,7 @@ import { useDynamic } from './algs/dynamic';
 
 function init() {
   // useFrequencyMap();
-  // useTurtleRabbit();
+  // useLinkedList();
   // useBinarySearch();
   // useBST();
   // useIsPalindrome();
@@ -23,7 +23,7 @@ function init() {
   // useBellman();
   // useDijkstra();
   // useDijkstraRewrite();
-  useDynamic();
+  // useDynamic();
 }
 
 init();
